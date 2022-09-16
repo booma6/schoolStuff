@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class MovieRatings
+{
+    public static void main(String[] args)
+    {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter moving rating (as a decimal)");
+        double rating = input.nextDouble();
+        rating = rating + 0.5;
+        int rounded = (int) rating;
+
+        System.out.print("Rating rounded: " + rounded);
+       
+    }
+}
